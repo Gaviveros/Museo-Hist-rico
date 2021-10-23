@@ -1,0 +1,53 @@
+@import "index";
+@import "arte";
+@import"exhibiciones";
+@import "reserva";
+
+$colorBlack: rgb(0, 0, 0);
+$colorWhite:white;
+
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin flexCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Barlow', sans-serif;
+}
+
+header{
+    nav{
+        .flexNav{
+            display: flex;
+            margin-top: 2rem;
+            margin-left: 6rem;
+        }
+        ul{
+            list-style: none;
+        }
+        p{
+            margin: 1rem;
+            color: white
+        }
+    }
+}
+
+footer{
+    img :hover{
+        width: 2em;
+    }
+}

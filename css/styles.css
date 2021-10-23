@@ -1,0 +1,151 @@
+body {
+  font-family: 'Barlow', sans-serif; }
+  body main .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    body main .flex h3 {
+      color: black;
+      font-size: 3em;
+      font-weight: 600; }
+    body main .flex a, body main .flex p {
+      text-decoration: none;
+      color: black; }
+  body main .flexTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    body main .flexTitle h2 {
+      color: white;
+      font-size: 6rem;
+      font-weight: 400; }
+    body main .flexTitle a, body main .flexTitle p {
+      text-decoration: none;
+      color: white; }
+  body main .flexCardsIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    body main .flexCardsIndex h5 {
+      color: black;
+      font-weight: 600; }
+    body main .flexCardsIndex p {
+      color: black; }
+
+main .flexCardsArt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5rem; }
+  main .flexCardsArt h5 {
+    color: black;
+    font-weight: 600; }
+  main .flexCardsArt p {
+    color: white; }
+
+main .hover {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60%; }
+
+main .hover-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  transition: all 0.4s; }
+
+main .hover img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s; }
+
+main .hover-content {
+  position: relative;
+  z-index: 99; }
+
+main .hover-1 img {
+  width: 105%;
+  position: absolute;
+  top: 0;
+  left: -5%;
+  transition: all 0.3s; }
+
+main .hover-1-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  transition: all 0.4s; }
+
+main .hover-1 .hover-overlay {
+  background: rgba(0, 0, 0, 0.5); }
+
+main .hover-1-description {
+  transform: translateY(0.5rem);
+  transition: all 0.4s;
+  opacity: 0; }
+
+main .hover-1:hover .hover-1-content {
+  bottom: 2rem; }
+
+main .hover-1:hover .hover-1-description {
+  opacity: 1;
+  transform: none; }
+
+main .hover-1:hover img {
+  left: 0; }
+
+main .hover-1:hover .hover-overlay {
+  opacity: 0; }
+
+main .degrade {
+  background-image: linear-gradient(black, white); }
+
+@media (max-width: 800px) {
+  .flexCardsArt {
+    flex-direction: column !important; } }
+
+main .color p {
+  color: white !important; }
+
+main .color h5 {
+  font-size: 2em; }
+
+main .headerForm {
+  color: #36A0FF;
+  font-size: 27px;
+  padding: 10px; }
+
+main .bigicon {
+  font-size: 35px;
+  color: #36A0FF; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Barlow', sans-serif; }
+
+header nav .flexNav {
+  display: flex;
+  margin-top: 2rem;
+  margin-left: 6rem; }
+
+header nav ul {
+  list-style: none; }
+
+header nav p {
+  margin: 1rem;
+  color: white; }
+
+footer img :hover {
+  width: 2em; }

@@ -1,0 +1,56 @@
+$colorBlack: rgb(0, 0, 0);
+$colorWhite:white;
+
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+//index//
+body{
+    font-family: 'Barlow', sans-serif;
+    main{
+        .flex{
+            @include flex;
+            h3{
+                color:$colorBlack;
+                font-size: 3em;
+                font-weight: 600;
+            }
+            a, p{
+                text-decoration: none;
+                color:$colorBlack
+            }
+        }
+        .flexTitle{
+            @include flex;
+            h2{
+                color:$colorWhite;
+                font-size: 6rem;
+                font-weight: 400;
+            }
+            a, p{
+                text-decoration: none;
+                color:$colorWhite
+            }
+        }
+        .flexCardsIndex{
+            @include flexCards;
+            h5{
+                color: $colorBlack;
+                font-weight: 600;
+            }
+            p{
+                color: $colorBlack;
+            }
+        }     
+    }
+}

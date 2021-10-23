@@ -1,0 +1,30 @@
+$colorBlack: rgb(0, 0, 0);
+$colorWhite:white;
+
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin flexCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main{
+    .headerForm {
+        color: #36A0FF;
+        font-size: 27px;
+        padding: 10px;
+    }
+    
+    .bigicon {
+        font-size: 35px;
+        color: #36A0FF;
+    }
+    
+}
