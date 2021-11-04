@@ -3,7 +3,7 @@
 
 <head>
   <title>Pagina principal del Museo Histórico Nacional</title>
-  <meta name="description" content="Homepage del Museo Histórico Nacional, artistas, exposiciones, etc"> 
+  <meta name="description" content="Homepage del Museo Histórico Nacional, artistas, exposiciones, etc">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,14 +22,15 @@
   <link rel="stylesheet" href="css/styles.css">
   <title>Index con Bootstrap</title>
 </head>
+
 <header class="header">
 
   <nav class="navbar navbar-expand-lg navbar-light bg-black">
     <div class="container-fluid">
-      <img src="img/logo.png" alt="" width="8%">
+      <img src="img/logo.png" alt="" width="8%" class="logo_resp">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <img src="img/burger_icon.png" width="25px" alt="">
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="flexNav">
@@ -76,34 +77,39 @@
           </div>
         </div>
 
-        <h2 class="text-center mt-5">Nuestros artistas</h2>
-        <div class="col-6 p-3 mt-5 border bg-light flex">
 
+        <h2 class="text-center mt-3">Nuestros artistas</h2>
+
+
+        <div class="col-6 flex div_resp">
+          <img src="img/delavale_exhib.png" alt="" width="100%">
+        </div>
+        <div class="col-6 p-3 flex div_resp">
           <h3 class="text-center">Della Valle</h3>
           <p class="text-center">Tenemos las obras más conocidas del artista</p>
           <a class="text-center" href="http://www.google.com" target="a_blank">Entradas aqui</a>
         </div>
-        <div class="col-6 p-3 mt-5 border bg-light flex">
-          <img src="img/delavale_exhib.png" alt="" width="100%">
-        </div>
 
-        <div class="col-6 p-3 mt-3 border bg-light flex">
-          <img src="img/berni_exhib.png" alt="" width="100%">
-        </div>
-        <div class="col-6 p-3 mt-3 border bg-light flex">
+
+        <div class="col-6 p-3 flex div_resp2">
           <h3 class="text-center">Antonio Berni</h3>
           <p class="text-center">Tenemos las obras más conocidas del artista</p>
           <a class="text-center" href="http://www.google.com" target="a_blank">Entradas aqui</a>
         </div>
+        <div class="col-6 flex div_resp2">
+          <img src="img/berni_exhib.png" alt="" width="100%">
+        </div>
 
-        <div class="col-6 p-3 mt-3 mb-5 border bg-light flex">
+
+        <div class="col-6 div_resp3">
+          <img src="img/noe_exhib.png" alt="" width="100%">
+        </div>
+        <div class="col-6 p-3 flex div_resp3">
           <h3 class="text-center">Felipe Noé</h3>
           <p class="text-center">Tenemos las obras más conocidas del artista</p>
           <a class="text-center" href="http://www.google.com" target="a_blank">Entradas aqui</a>
         </div>
-        <div class="col-6 p-3 mt-3 mb-5 border bg-light">
-          <img src="img/noe_exhib.png" alt="" width="100%">
-        </div>
+
 
 
         <section class="flexCardsIndex">
@@ -150,24 +156,29 @@
 
   <footer class="bg-black text-center text-white">
     <div class="container p-4">
-      <section class="mb-4">
+      <div class="mb-4">
 
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-instagram"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button"
+          target="_blank"><img src="img/logoF.svg" width="28px" class="align-items-center justify-content-center"></a>
 
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://mail.google.com/mail/u/0/#inbox" role="button"
+          target="_blank"><img src="img/logo_mail.svg" width="26px"
+            class="align-items-center justify-content-center"></a>
 
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
-      </section>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"
+          target="_blank"><img src="img/logo_instagram.svg" width="28px"
+            class="align-items-center justify-content-center"></a>
+      </div>
 
     </div>
     </form>
     </section>
 
-    <section class="mb-4">
+    <div class="mb-4">
       <p>Defensa 1600, Ciudad Autónoma de Buenos Aires. Lunes a Miércoles
         |Cerrado Jueves a Domingos | Abierto de 11:00 a 19:00hs.
         Más info: 4300-7540</p>
-    </section>
+    </div>
 
     <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2020 Copyright:

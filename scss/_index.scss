@@ -14,6 +14,17 @@ $colorWhite:white;
     justify-content: space-between;
 }
 
+@mixin flexCardsResp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin resp {
+    width: 100%;
+    margin-bottom: 0!important;
+}
+
 //index//
 body{
     font-family: 'Barlow', sans-serif;
@@ -21,14 +32,29 @@ body{
         .flex{
             @include flex;
             h3{
-                color:$colorBlack;
+                color:$colorWhite;
                 font-size: 3em;
                 font-weight: 600;
             }
             a, p{
                 text-decoration: none;
-                color:$colorBlack
+                color:$colorWhite
             }
+        }
+        .div_resp{
+            margin-bottom: 20px;
+            background-color: black;
+            color: white;
+        }
+        .div_resp2{
+            margin-bottom: 20px;
+            background-color: rgb(255, 255, 255);
+            color: white;
+        }
+        .div_resp3{
+            margin-bottom: 20px;
+            background-color: black;
+            color: white;
         }
         .flexTitle{
             @include flex;
@@ -43,7 +69,9 @@ body{
             }
         }
         .flexCardsIndex{
-            @include flexCards;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
             h5{
                 color: $colorBlack;
                 font-weight: 600;
@@ -54,3 +82,48 @@ body{
         }     
     }
 }
+
+@media (max-width:800px){
+    header{
+        .logo_resp{
+            width: 70px;
+
+        }
+    }
+    .flexTitle{
+        @include flex;
+        h2{
+            color:$colorWhite;
+            font-size: 5rem !important;
+            font-weight: 400;
+        }
+    }
+    .div_resp{
+        @include resp;
+        background-color: rgb(70, 70, 70);
+    }
+    .div_resp2{
+        @include resp;
+        background-color: rgb(121, 121, 121);
+    }
+    .div_resp3{
+        @include resp;
+        background-color: rgb(184, 184, 184);
+    }
+    .col-3{
+        width: 80% !important;
+    }
+    .flexCardsIndex{
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        h5{
+            color: $colorBlack;
+            font-weight: 600;
+        }
+        p{
+            color: $colorBlack;
+        }
+    }
+}   
