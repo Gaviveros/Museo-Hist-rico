@@ -2,23 +2,8 @@
 @import "arte";
 @import"exhibiciones";
 @import "reserva";
-
-$colorBlack: rgb(0, 0, 0);
-$colorWhite:white;
-
-@mixin flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-@mixin flexCards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+@import "variables";
+@import "mixin";
 
 *{
     margin: 0;
@@ -33,13 +18,16 @@ header{
     nav{
         .flexNav{
             display: flex;
+            justify-content: center;
+            align-items: center !important;
         }
         ul{
             list-style: none;
         }
         p{
             margin: 1rem;
-            color: white
+            color: white;
+            font-size:19px !important;
         }
     }
 }
@@ -49,3 +37,20 @@ footer{
         width: 2em;
     }
 }
+
+@media (max-width:500px){
+    header{
+        .logo_resp{
+            width: 60px;
+        }
+        nav{
+            .flexNav{
+                margin-bottom: 0;
+                padding-left: 0;
+                p{
+                   font-size: 14px !important;
+                }
+            }
+        }
+    }
+}    

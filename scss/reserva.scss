@@ -1,19 +1,5 @@
-$colorBlack: rgb(0, 0, 0);
-$colorWhite:white;
-
-@mixin flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-@mixin flexCards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+@import "variables";
+@import "mixin";
 
 main{
     .headerForm {
@@ -26,5 +12,8 @@ main{
         font-size: 35px;
         color: #36A0FF;
     }
-    
+    .aire{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
 }

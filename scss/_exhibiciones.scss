@@ -1,20 +1,5 @@
-
-$colorBlack: rgb(0, 0, 0);
-$colorWhite:white;
-
-@mixin flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-@mixin flexCards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+@import "variables";
+@import "mixin";
 
 main{
     .color{
@@ -23,6 +8,11 @@ main{
         }
         h5{
             font-size: 2em;
+        }
+        .flex_img{
+            display: flex;
+            align-items: center !important;
+            justify-content: center !important;
         }
     }
 }

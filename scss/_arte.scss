@@ -1,22 +1,11 @@
-$colorBlack: rgb(0, 0, 0);
-$colorWhite:white;
-
-@mixin flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-@mixin flexCards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
+@import "variables";
+@import "mixin";
 
 main{
+  h2{
+    @include titular;
+    color: $colorWhite;
+  }
     .flexCardsArt{
         display: flex;
         flex-direction: row;
